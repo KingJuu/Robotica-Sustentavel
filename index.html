@@ -1,32 +1,72 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Robótica Sustentável</title>
-
-    <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+  </style>
 </head>
-<body> 
-    <script src="script.js"></script>
-
-    <header id="header">
+<body link="#FFFFFF">
+  <div id="content">
+    <header>
         <img src="#">
-        <div id="nav">
-            <h3>ÁREA DO ALUNO</h3>
-            <h3>QUEM SOMOS</h3>
-        </div>
+            <nav id="menu">
+                <h4>QUEM SOMOS</h4>
+                <h4>ÁREA DO ALUNO</h4>
+                <button id="matricula">MATRICULE-SE</button>
+            </nav>
     </header>
-        <div id="main">
 
-            <h1>texto1</h1>
-            <div id="font">
-                <p>Tamanho da fonte</p>
-                <button id="increase-font" onclick="tamanhoFonte(1)">+</button>
-                <button id="decrease-font" onclick="tamanhoFonte(-1)">-</button>
+    <div id="main">
+        <div id="intro">
+            <h1>Nome do Curso</h1>
+            <h2>Curso de Robótica Sustentável</h2>
+            <img src="Img/Robotics-rafiki.svg">
+        </div>
+        <div id="controls">
+            <h3>Tamanho da fonte</h3>
+            <button class="btn" onclick="changeFontSize('decrease')">-</button>
+            <button class="btn" onclick="changeFontSize('increase')">+</button>
+        </div>
+    </div>
+
+    <div id="faixa">
+        <div class="destaques">
+            <img src="Img/download-de-pasta.png" width="70" height="70">
+            <p>Acesso completo</p>
+        </div>
+        <div class="destaques">
+            <img src="Img/hora-quarto-passado.png" width="70" height="70">
+            <p>Estude quando quiser</p>
+        </div>
+        <div class="destaques">
+            <img src="Img/usuarios-medicos.png" width="70" height="70">
+            <p>Comunidade online</p>
+        </div>   
+    </div>
+    <div id="propaganda">
+        <div id="text1">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc aliquam risus eget ligula eleifend, eget aliquam arcu volutpat. Suspendisse eget velit auctor, suscipit leo nec, feugiat ante. Aliquam imperdiet porta ipsum, sit amet porttitor ligula posuere eget. Proin blandit leo enim, at venenatis ex ullamcorper vitae. Aliquam tempor a ex at ornare. Nam ac consectetur neque. Sed nec neque mattis, convallis nisl sit amet, viverra justo. In tempus purus augue, id vulputate sapien fermentum in. Mauris rhoncus sollicitudin arcu, ornare lobortis ante congue in. Maecenas at ipsum nibh.
+            </p>
+        </div>
+        <img src="Img/undraw_learning_sketching_nd4f.svg" width="300" height="300">
+    </div>
+    <footer>
+        <div id="footer1">
+            <p>LOGO
+            <div id="social">
+                <img src="Img/whatsapp.png" width="30" height="30">
+                <img src="Img/instagram.png" width="30" height="30">
+                <img src="Img/telegram.png" width="30" height="30">
             </div>
         </div>
-    <footer>.</footer>
+        <div id="creditos">
+        <p>Créditos</p><br>
+            <a href="https://storyset.com/technology">Technology illustrations by Storyset</a>
+            <a href="https://storyset.com/nature">Nature illustrations by Storyset</a>
+        </div>
+    </footer>
+  </div>
+  <script src="script.js"></script>
 </body>
 </html>
