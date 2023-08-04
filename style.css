@@ -1,0 +1,214 @@
+*{ 
+    margin: 0px;
+    font-weight: lighter;   
+}
+
+body{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+}
+
+/* Estilos para os botões */
+.btn {
+    display: inline-block;
+    position:initial;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration:solid;
+    cursor: pointer;
+    width: 40px;
+    border:0;
+    border-radius: 0.5em;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+header{
+    height: 110px;
+    background-color: #028090;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000000;
+    padding-left:35px;
+  }
+
+  #menu1{
+    background-color: #028090   ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    max-width: 50%;
+}
+
+    #menu{
+    display: none;
+}
+
+    #hamburguer{
+        display:none;
+    }
+
+@media screen and (max-width:1024px) {
+
+    header {
+        padding-left: 10px;
+    }
+    
+    #menu1{
+        display:none;
+    }
+
+    #hamburguer{
+        display:block;
+        background-color: aqua;
+        width:10%;
+    }
+}
+
+#matricula{
+    background-color: #012938;
+    padding:25px; 
+    font-size: 17px;
+    display:flex;
+    align-items: center;
+    border:0em;
+    border-radius: 0.5em;
+    height: 40px;
+    cursor: pointer;
+    color:#ffffff;
+    font-weight: bolder;
+    margin: 0.5em;
+}
+
+#matricula:hover{
+    padding:30px;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+#main{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    color:#012938;
+    padding-left: 35px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+p1{
+    font-family: 'Alata', sans-serif;
+    font-size: 70px;
+};
+
+
+p {
+    font-size:15px;
+}
+#intro{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-right: 12%;
+    
+    width: 100%;
+    font-size: 25px;
+}
+
+#faixa{
+    color:#012938;
+    font: weight 7px;
+    background-color: #00A896;
+    height: 200px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+.destaques{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-between;
+    margin: 20px;
+    padding: 10px;
+    height: 110px;
+    font-size: 20px;
+}
+
+#propaganda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5%;
+    margin-right:10%;
+}
+
+#text1 {
+    font-size: 20px;
+    width: 40%;
+    margin:5%;
+}
+
+footer{
+    background-color: #028090;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:200px;
+    padding: 2%;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+}
+#footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+#creditos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages {
+    margin:10px;
+    font-family: 'Alata', sans-serif;
+    background-color: #028090;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight:normal;
+    font-size: 17px;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+.pages:hover {
+    color: #012938;
+    background-color: #FFFFFF;
+    font-size: 19px;
+};
+
+
