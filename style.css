@@ -6,6 +6,7 @@
 body{
     font-family: 'Lora', serif;
     font-size: 15px;
+    background-color: var(--surface-color);
 }
 
 /* Estilos para os botões */
@@ -33,6 +34,7 @@ header{
     justify-content: space-between;
     color: #000000;
     padding-left:35px;
+    
   }
 
   #menu1{
@@ -65,13 +67,13 @@ header{
 
     #hamburguer{
         display:block;
-        background-color: aqua;
+        background-color: #012938;
         width:10%;
     }
 }
 
 #matricula{
-    background-color: #012938;
+    background-color: var(--stroke-color);
     padding:25px; 
     font-size: 17px;
     display:flex;
@@ -80,7 +82,7 @@ header{
     border-radius: 0.5em;
     height: 40px;
     cursor: pointer;
-    color:#ffffff;
+    color: var(--highlight-color);
     font-weight: bolder;
     margin: 0.5em;
 }
@@ -115,9 +117,9 @@ p {
     flex-direction: column;
     justify-content:center;
     margin-right: 12%;
-    
     width: 100%;
     font-size: 25px;
+    color: var(--stroke-color);
 }
 
 #faixa{
@@ -131,6 +133,8 @@ p {
     justify-content: space-around;
     padding-left: 10%;
     padding-right: 10%;
+    font-family: 'Alata', sans-serif;
+
 }
 
 .destaques{
@@ -157,6 +161,8 @@ p {
     font-size: 20px;
     width: 40%;
     margin:5%;
+    line-height: 1.5em;
+    color: var(--text-color);
 }
 
 footer{
@@ -166,7 +172,7 @@ footer{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height:200px;
+    height:auto;
     padding: 2%;
 }
 
@@ -205,10 +211,66 @@ footer{
     cursor: pointer;
 }
 
+a {
+    text-decoration: none;
+}
 .pages:hover {
     color: #012938;
     background-color: #FFFFFF;
     font-size: 19px;
 };
 
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+    float: right;
+}
 
+#switch button {
+    width: 36px;
+    height: 36px;
+    background: var(--highlight-color) no-repeat center;
+    border: 10px;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 370px;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(95%);
+    cursor: pointer;
+    animation: slide-back 0.2s;
+}
+
+.light #switch button {
+    animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+    outline: 4px solid;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--stroke-color);
+    border: 1px solid var(--surface-color);
+    border-radius: 99px;
+    margin-left: 370px;
+  }
+
+:root {
+    --stroke-color: #fefefe;
+    --highlight-color: #012938;
+    --surface-color: #012938;
+    --text-color: #ffffff;
+}
+
+.light {
+    --stroke-color: #012938;
+    --highlight-color: #fefefe;
+    --surface-color: #ffffff;
+    --text-color: #000000;
+}

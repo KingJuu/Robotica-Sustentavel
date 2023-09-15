@@ -1,0 +1,345 @@
+*{ 
+    margin: 0px;
+    font-weight: lighter;   
+}
+
+body{
+    font-family: 'Lora', serif;
+    font-size: 15px;
+    background-color: var(--surface-color);
+}
+
+/* Estilos para os botões */
+.btn {
+    display: inline-block;
+    position:initial;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #ffffff;
+    color: #000000;
+    text-decoration:solid;
+    cursor: pointer;
+    width: 40px;
+    border:0;
+    border-radius: 0.5em;
+    font-size: larger;
+    font-weight: bold;
+  }
+
+header{
+    height: 110px;
+    background-color: #028090;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: #000000;
+    padding-left:35px;
+    
+  }
+
+  #menu1{
+    background-color: #028090   ;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 20px;
+    max-width: 50%;
+}
+
+    #menu{
+    display: none;
+}
+
+    #hamburguer{
+        display:none;
+    }
+
+@media screen and (max-width:1024px) {
+
+    header {
+        padding-left: 10px;
+    }
+    
+    #menu1{
+        display:none;
+    }
+
+    #hamburguer{
+        display:block;
+        background-color: #012938;
+        width:10%;
+    }
+}
+
+#matricula{
+    background-color: var(--stroke-color);
+    padding:25px; 
+    font-size: 17px;
+    display:flex;
+    align-items: center;
+    border:0em;
+    border-radius: 0.5em;
+    height: 40px;
+    cursor: pointer;
+    color: var(--highlight-color);
+    font-weight: bolder;
+    margin: 0.5em;
+}
+
+#matricula:hover{
+    padding:30px;
+    font-size: 19px;
+    font-weight: normal;
+}
+
+#main{
+    color:#012938;
+    padding: 0px;
+}
+
+#main img{
+    position: static;
+    width: 100%;
+}
+
+p1{
+    font-family: 'Alata', sans-serif;
+    font-size: 50px;
+};
+
+
+p {
+    font-size:15px;
+}
+#intro{
+    position: absolute;
+    margin-top: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    margin-right: 10%;
+    padding: 5%;
+    width: fit-content;
+    height: fit-content;
+    font-size: 25px;
+    color: var(--text-color);
+    background-color: var(--intro-color);
+}
+
+
+#propaganda{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin: 5%;
+    margin-right:10%;
+
+}
+
+#text1 {
+    font-size: 15px;
+    width: 40%;
+    height: fit-content;
+    margin:5%;
+    color: var(--text-color);
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
+}
+
+/**carrosel**/
+
+.container-slide-p{
+    display: flex;
+    justify-content: space-between;
+    width: 75%;
+    height: 60vh;
+    background-color: black;
+}
+
+.container-items-p{
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.container-items-p2{
+    position: absolute;
+    display: flex;
+    width: 50%;
+    height: 60vh;
+    overflow: hidden;
+} 
+.item-p {
+    width: auto;
+    height: 60vh;
+    transition: none;
+}
+.item-p:first-child{
+    margin-left: 0;
+}
+
+.item-p img {
+    width: auto;
+    height: 60vh;
+}
+
+.action-button-p{
+    font: bold 30px sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    color: #000000;
+    user-select: none;
+    z-index: 1;
+}
+.action-button-p:hover{
+    color: rgb(255, 255, 255);
+    background-color: #0c0c0c23;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.btn-next{
+    border: 0em;
+    border-radius: 0.3em ;
+    background-color: var(--stroke-color);
+    color: var(--text-color-2);
+    padding: 1% 5%;
+    font-size: 20px;
+    align-self: flex-end;
+    margin-top: 30px;
+    margin-left: 10%;
+    margin-bottom: 30px;
+}
+
+.btn-next{
+    cursor: pointer;
+}
+
+
+footer{
+    background-color: #028090;
+    color: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height:auto;
+    padding: 2%;
+}
+
+#social {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    width: 15%;
+}
+#footer1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 80%;
+    
+}
+
+#creditos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.pages {
+    margin:10px;
+    font-family: 'Alata', sans-serif;
+    background-color: #028090;
+    padding: 15px;
+    color: #FFFFFF;
+    font-weight:normal;
+    font-size: 17px;
+    border-radius: 0.4em;
+    cursor: pointer;
+}
+
+a {
+    text-decoration: none;
+}
+.pages:hover {
+    color: #012938;
+    background-color: #FFFFFF;
+    font-size: 19px;
+};
+
+#switch {
+    position: relative;
+    width: 64px;
+    margin: 4px auto;
+    float: right;
+}
+
+#switch button {
+    width: 36px;
+    height: 36px;
+    background: var(--highlight-color) no-repeat center;
+    border: 10px;
+    border-radius: 50%;
+    margin-top: 3px;
+    margin-left: 370px;
+    top: 50%;
+    left: 0;
+    z-index: 1;
+    transform: translateY(95%);
+    cursor: pointer;
+    animation: slide-back 0.2s;
+}
+
+.light #switch button {
+    animation: slide-in 0.2s forwards;
+}
+
+#switch button:hover {
+    outline: 4px solid;
+}
+
+#switch span {
+    display: block;
+    width: 64px;
+    height: 24px;
+    background: var(--stroke-color);
+    border: 1px solid var(--surface-color);
+    border-radius: 99px;
+    margin-left: 370px;
+  }
+
+  :root {
+    --intro-color: #028090ca;
+    --stroke-color: #fefefe;
+    --highlight-color: #012938;
+    --surface-color: #012938;
+    --text-color: #ffffff;
+    --text-color-2: #000000;
+}
+
+.light {
+    --intro-color: #e3e3e7ca;
+    --stroke-color: #012938;
+    --highlight-color: #fefefe;
+    --surface-color: #ffffff;
+    --text-color: #000000;
+    --text-color-2: #ffffff;
+}
+
+.breve{
+    width: 100%;
+    height: 900px;
+}
